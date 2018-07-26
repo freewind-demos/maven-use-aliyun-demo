@@ -13,8 +13,8 @@
     </properties>
     <repositories>
         <repository>
-            <id>jcenter</id>
-            <url>https://jcenter.bintray.com/</url>
+            <id>aliyun-jcenter</id>
+            <url>http://maven.aliyun.com/nexus/content/repositories/jcenter/</url>
         </repository>
     </repositories>
     <dependencies>

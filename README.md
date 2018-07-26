@@ -1,13 +1,13 @@
-Maven Use JCenter Repository Demo
-=================================
+Maven Use Aliyun JCenter Repository Demo
+========================================
 
 Add to `POM.xml` of your maven project:
 
 ```
 <repositories>
     <repository>
-        <id>jcenter</id>
-        <url>https://jcenter.bintray.com/</url>
+        <id>aliyun-jcenter</id>
+        <url>http://maven.aliyun.com/nexus/content/repositories/jcenter/</url>
     </repository>
 </repositories>
 ```
@@ -21,14 +21,14 @@ Add it to global `~/.m2/settings.xml`. If no such file, we can create it and giv
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
     <profiles>
         <profile>
-            <id>global-jcenter-repo</id>
+            <id>global-aliyun-jcenter-repo</id>
             <activation>
-                <activeByDefault>false</activeByDefault>
+                <activeByDefault>true</activeByDefault>
             </activation>
             <repositories>
                 <repository>
-                    <id>jcenter</id>
-                    <url>https://jcenter.bintray.com/</url>
+                    <id>aliyun-jcenter</id>
+                    <url>http://maven.aliyun.com/nexus/content/repositories/jcenter/</url>
                 </repository>
             </repositories>
         </profile>
